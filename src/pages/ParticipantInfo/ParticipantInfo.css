@@ -1,0 +1,132 @@
+.participant-page {
+  padding: 120px 0 80px;
+  min-height: 100vh;
+}
+
+.participant-hero {
+  max-width: 820px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.participant-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: #a8c52d;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.participant-hero h1 {
+  margin: 0 0 18px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #1c2c5b;
+  line-height: 1.1;
+}
+
+.participant-hero p {
+  margin: 0;
+  color: #5d6472;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.participant-intro-card {
+  max-width: 980px;
+  margin: 0 auto 28px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+}
+
+.participant-intro-card p {
+  margin: 0;
+  color: #5d6472;
+  line-height: 1.8;
+}
+
+.participant-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.participant-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  border-top: 5px solid #a8c52d;
+}
+
+.participant-card h2 {
+  margin: 0 0 16px;
+  color: #1c2c5b;
+  font-size: 1.4rem;
+}
+
+.participant-card p {
+  margin: 0 0 12px;
+  color: #5d6472;
+  line-height: 1.75;
+}
+
+.participant-card p:last-child {
+  margin-bottom: 0;
+}
+
+.participant-card ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #5d6472;
+  line-height: 1.75;
+}
+
+.participant-card li + li {
+  margin-top: 10px;
+}
+
+.participant-newsletter {
+  margin-top: 36px;
+  background: linear-gradient(180deg, #fff1c9 0%, #ffe3ab 100%);
+  border-radius: 24px;
+  padding: 28px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.participant-newsletter h3 {
+  margin: 0 0 10px;
+  color: #1c2c5b;
+  font-size: 1.5rem;
+}
+
+.participant-newsletter p {
+  margin: 0;
+  color: #5d6472;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .participant-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .participant-page {
+    padding: 105px 0 70px;
+  }
+
+  .participant-card,
+  .participant-intro-card,
+  .participant-newsletter {
+    padding: 22px;
+  }
+}

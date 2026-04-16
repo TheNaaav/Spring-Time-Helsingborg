@@ -1,0 +1,155 @@
+
+
+.home-intro__inner {
+  max-width: 760px;
+  text-align: center;
+}
+
+.home-intro p {
+  margin: 0;
+  color: #5d6472;
+  line-height: 1.7;
+}
+
+.home-races__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.race-card {
+  border-radius: 22px;
+  padding: 24px 20px;
+  text-align: center;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.race-card h3 {
+  margin: 0 0 8px;
+  color: #1c2c5b;
+}
+
+.race-card span {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #ff7a00;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.race-card p {
+  margin: 0;
+  color: #5d6472;
+  line-height: 1.6;
+}
+
+.home-center-link {
+  text-align: center;
+  margin-top: 28px;
+}
+
+.home-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ff7a00 0%, #ff4d00 100%);
+  color: #ffffff;
+  font-weight: 800;
+}
+
+
+.home-info__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-box {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+}
+
+.info-box h3 {
+  margin-top: 0;
+  color: #a8c52d;
+}
+
+.info-box p {
+  margin-bottom: 0;
+  color: #5d6472;
+}
+
+
+.home-course__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.home-course__map {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.home-course__map:hover {
+  transform: scale(1.02);
+}
+
+.home-course__text p {
+  color: #5d6472;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.map-placeholder {
+  min-height: 320px;
+  border-radius: 22px;
+  background: #ffffff;
+  display: grid;
+  place-items: center;
+  color: #8b8b8b;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+}
+
+.results-preview {
+  display: grid;
+  gap: 14px;
+}
+
+.result-row {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px 18px;
+  display: grid;
+  grid-template-columns: 90px 1fr 1fr;
+  gap: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
+}
+
+.result-row strong {
+  color: #1c2c5b;
+}
+
+.result-row span {
+  color: #5d6472;
+}
+
+@media (max-width: 900px) {
+  .home-races__grid,
+  .home-info__grid,
+  .home-course__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .result-row {
+    grid-template-columns: 1fr;
+  }
+}

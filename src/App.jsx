@@ -1,17 +1,30 @@
-import './App.css'
-import Header from './components/Header/Header'
-import Hero from './components/Hero/Hero'
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Home from "./pages/Home/Home";
+import RaceInfo from "./pages/RaceInfo/RaceInfo";
+import Course from "./pages/Course/Course";
+import Results from "./pages/Results/Results";
+import Contact from "./pages/Contact/Contact";
+import Registration from "./pages/Registration/Registration";
+import ParticipantInfo from "./pages/ParticipantInfo/ParticipantInfo";
+import Footer from "./components/Footer/Footer";
 
-function App() {
-
+export default function App() {
   return (
     <>
-      <div>
-        <Header/>
-        <Hero/>
-      </div>
-    </>
-  )
-}
+      <Header />
 
-export default App
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/anmalan" element={<Registration />} />
+        <Route path="/loppen" element={<RaceInfo />} />
+        <Route path="/banan" element={<Course />} />
+        <Route path="/deltagarinfo" element={<ParticipantInfo />} />
+        <Route path="/resultat" element={<Results />} />
+        <Route path="/kontakt" element={<Contact />} />
+      </Routes>
+
+      <Footer />
+    </>
+  );
+}

@@ -1,0 +1,143 @@
+.registration-page {
+  padding-top: 120px;
+  min-height: 100vh;
+}
+
+.registration-hero {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 40px;
+}
+
+.registration-hero h1 {
+  margin: 0 0 14px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #1c2c5b;
+}
+
+.registration-hero p {
+  margin: 0;
+  line-height: 1.7;
+  color: #5d6472;
+}
+
+.registration-list {
+  display: grid;
+  gap: 24px;
+}
+
+.registration-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.registration-card__head {
+  margin-bottom: 20px;
+}
+
+.registration-card__head h2 {
+  margin: 0 0 8px;
+  color: #a8c52d;
+  font-size: 1.7rem;
+}
+
+.registration-card__head p {
+  margin: 0;
+  color: #5d6472;
+}
+
+.registration-prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.price-box {
+  background: #f8f5ef;
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+}
+
+.price-box span {
+  display: block;
+  min-height: 42px;
+  font-size: 0.9rem;
+  color: #5d6472;
+  line-height: 1.4;
+}
+
+.price-box strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: #1c2c5b;
+}
+
+.registration-card__action {
+  margin-top: 22px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.registration-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  padding: 13px 22px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ff7a00 0%, #ff4d00 100%);
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(255, 100, 0, 0.22);
+}
+
+.registration-info {
+  margin-top: 50px;
+}
+
+.registration-info h3 {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 2rem;
+  color: #1c2c5b;
+}
+
+.registration-info__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-panel {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+}
+
+.info-panel h4 {
+  margin: 0 0 12px;
+  color: #a8c52d;
+}
+
+.info-panel p {
+  margin: 0;
+  color: #5d6472;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .registration-prices,
+  .registration-info__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .registration-card__action {
+    justify-content: center;
+  }
+}

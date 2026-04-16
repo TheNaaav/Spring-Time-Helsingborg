@@ -1,0 +1,19 @@
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.section-title span {
+  width: 70px;
+  height: 2px;
+  background: #c9c9c9;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: #1c2c5b;
+}

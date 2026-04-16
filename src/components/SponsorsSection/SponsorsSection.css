@@ -1,0 +1,61 @@
+.sponsors {
+  padding: 70px 0;
+}
+
+.sponsors-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #a8c52d;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.sponsors-head h2 {
+  margin: 0 0 10px;
+  color: #1c2c5b;
+}
+
+.sponsors-head p {
+  margin: 0;
+  color: #666;
+}
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.sponsor-item {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  text-align: center;
+  font-weight: 700;
+  color: #1c2c5b;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  transition: 0.2s;
+}
+
+.sponsor-item:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 900px) {
+  .sponsors-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .sponsors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
