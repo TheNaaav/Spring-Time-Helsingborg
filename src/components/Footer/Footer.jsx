@@ -10,8 +10,12 @@ export default function Footer() {
           <h3>🏃 SPRINGTIME HELSINGBORG</h3>
 
           <div className="socials">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
+            <a href="https://www.facebook.com/springtimeihelsingborg/" target="_blank" rel="noopener noreferrer">
+              Facebook
+            </a>
+            <a href="https://www.instagram.com/springtimehbg/" target="_blank" rel="noopener noreferrer">
+              Instagram
+            </a>
           </div>
         </div>
 

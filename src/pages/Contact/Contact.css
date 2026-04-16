@@ -1,3 +1,99 @@
-.simple-page {
-  padding-top: 120px;
+.contact-page {
+  padding: 120px 0 80px;
+  min-height: 100vh;
+}
+
+.contact-hero {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.contact-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: #a8c52d;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.contact-hero h1 {
+  margin: 0 0 16px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #1c2c5b;
+}
+
+.contact-hero p {
+  margin: 0;
+  color: #5d6472;
+  line-height: 1.7;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.contact-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid #a8c52d;
+}
+
+.contact-card h2 {
+  margin: 0 0 14px;
+  color: #1c2c5b;
+  font-size: 1.3rem;
+}
+
+.contact-card p {
+  margin: 0 0 12px;
+  color: #5d6472;
+  line-height: 1.7;
+}
+
+.contact-card p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-card a {
+  color: #ff6a13;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.contact-card--wide {
+  grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card--wide {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-page {
+    padding: 100px 0 60px;
+  }
+
+  .contact-card {
+    padding: 22px;
+  }
 }

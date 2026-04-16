@@ -3,7 +3,6 @@ import Hero from "../../components/Hero/Hero";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import SponsorsSection from "../../components/SponsorsSection/SponsorsSection";
 import races from "../../data/races";
-import winners from "../../data/winners";
 import "./Home.css";
 
 export default function Home() {
